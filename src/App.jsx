@@ -1,6 +1,7 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import FormularioTarea from "./components/FormularioTarea";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <h1 className="text-center display-4">Lista de tareas</h1>
           <hr />
         </section>
+        <FormularioTarea />
       </Container>
       <footer className="bg-dark text-center text-light py-4">
         <p>&copy; Todos los derechos reservados</p>
