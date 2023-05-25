@@ -2,7 +2,7 @@ import { Form, Button } from "react-bootstrap";
 import React, { useState } from 'react';
 import ListaTareas from "./ListaTareas";
 
-const formularioTarea = () => {
+const FormularioTarea = () => {
     const [tarea, setTarea] = useState('');
     const [tareas, setTareas] = useState([]);
 
@@ -27,4 +27,4 @@ const formularioTarea = () => {
     );
 };
 
-export default formularioTarea;
+export default FormularioTarea;
