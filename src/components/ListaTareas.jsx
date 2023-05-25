@@ -4,13 +4,8 @@ import ItemTarea from './ItemTarea';
 
 const ListaTareas = () => {
     return (
-        <ListGroup>
-        <ItemTarea>Cras justo odio</ItemTarea>
-        <ItemTarea>Cras justo odio</ItemTarea>
-        <ItemTarea>Cras justo odio</ItemTarea>
-        <ItemTarea>Cras justo odio</ItemTarea>
-        <ItemTarea>Cras justo odio</ItemTarea>
-        <ItemTarea>Cras justo odio</ItemTarea>
+      <ListGroup>
+        <ItemTarea/>
       </ListGroup>
     );
 };
