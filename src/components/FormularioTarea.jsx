@@ -1,6 +1,6 @@
 import { Form, Button } from "react-bootstrap";
-import React, { useState } from 'react';
 import ListaTareas from "./ListaTareas";
+import { useState } from 'react';
 
 const FormularioTarea = () => {
     const [tarea, setTarea] = useState('');
@@ -8,7 +8,7 @@ const FormularioTarea = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setTareas([...tarea, tarea]);
+        setTareas([...tareas, tarea]);
         setTarea('');
     }
     return (
@@ -18,8 +18,10 @@ const FormularioTarea = () => {
                 <Form.Control 
                 type="text" 
                 placeholder="Ingrese una tarea" 
-                onChange={(e) => setTarea(e.target.value)} value={tarea} />
-                <Button variant="primary">Agregar tarea</Button>
+                onChange={(e) => setTarea(e.target.value)}
+                value={tarea}
+                />
+                <Button variant="primary" type="submit">Agregar</Button>
             </Form.Group>
         </Form>
         <ListaTareas />
