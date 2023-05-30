@@ -9,7 +9,6 @@ const FormularioTarea = () => {
 
     //Ciclo de vida
     useEffect(() => {
-/*         console.log('Aquí debería guardar en localStorage');*/        localStorage.setItem('listaTareas', JSON.stringify(tareas));
     }, [tareas]);
 
     const handleSubmit = (e) => {
